@@ -17,36 +17,12 @@ struct ContentView: View {
                 }
             }
 
-            Spacer()
-            HStack{
-                remove
-                Spacer()
-                add
-            }
-            .padding(.horizontal)
-            .font(.largeTitle)
+ 
                 
         }.padding(.horizontal)
     }
     
-    var remove: some View{
-        Button {
-            if emojiCount > 1 {
-                emojiCount -= 1}}
-         label: {
-            VStack{Image(systemName: "minus.circle")
-            }
-        }
-    }
-    var add: some View{
-        Button {
-            if emojiCount < emojis.count{
-                emojiCount += 1
-            }
-        }   label: {
-            Image(systemName: "plus.circle")
-        }
-    }
+
 }
 
 
